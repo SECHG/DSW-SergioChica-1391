@@ -41,7 +41,7 @@
 
 /*barra navegacion*/
 
-#nav{
+#navbar{
     width: 100% ;
     background-color: #333;
     color: white;
@@ -54,14 +54,14 @@
     align-items: center;
 }
 
-#nav ul{
+#navbar ul{
     list-style: none;
     text-decoration: none;
     margin: 0px auto;
     width: 1090px;
 }
 
-#nav > ul > li {
+#navbar > ul > li {
     line-height: 40px;
     float: left;
     border-right: 1px solid gray ;
@@ -69,7 +69,8 @@
     align-items: center;
     justify-content: center;
 }
-#nav > ul > li a{
+
+#navbar > ul > li a{
     display: block;
     padding-left: 20px ;
     padding-right: 20px;
@@ -77,15 +78,15 @@
     text-decoration: none;
 }
 
-#nav > ul > li a:first-child{
+#navbar > ul > li a:first-child{
     border-left: 1px solid gray;
 
 }
-#nav > ul > li:hover{
+
+#navbar > ul > li:hover{
     background-color: #70b231;
     box-shadow: 0px 0px 5px green inset;
 }
-
 
 
 
@@ -123,7 +124,7 @@
     <!--Fin Cabecera-->
 
     <!--Menu de Navegacion-->
-    <nav id="nav">
+    <nav id="navbar">
         <ul>
             <li>
                 <a href="index.html">Inicio</a>
@@ -139,6 +140,28 @@
             </li>
          </ul>   
     </nav>
+
+    <!--Fin de Menu-->
+
+    <!--Secciones-->
+    <div id="sections">
+        <section id="frontend">
+            <span class="sticker">
+                <img class="stickerone" src="img/scotch.png" alt="Pegatina"/>
+                <img class="stickertwo" src="img/scotch.png" alt="Pegatina"/>
+            </span>
+            <h2 class="titulo">Noticias Front-end</h2>
+            <article class="article">
+                <span class="icon">a</span>
+                <p>
+                    <a href="#">Titulo de la Entrada</a>
+                    What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                </p>
+                <span class="date">[16-09-2022. Sergio Chica]</span>
+            </article>
+
+    <!--Fin de Secciones-->
 
       <!--pie de pagina-->
       <footer id="footer">
