@@ -11,6 +11,17 @@
 </head>
 
 <style>
+/*General*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(Imagenes/paven.png);
+}
+
 /*Cabecera*/
 #header{
     min-width: 1024px;
@@ -88,6 +99,67 @@
     box-shadow: 0px 0px 5px green inset;
 }
 
+/*secciones*/
+
+
+#sections{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /*text-align: center;*/
+    margin: 0px auto;
+}
+#sections .sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    font-family: 'Rajdhani', sans-serif;
+    margin-right: 20px;
+}
+
+#sections .title{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 2px 3px green  ;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#sections section {
+    margin-top:  40px;
+    background-color: rgb(196, 229, 205);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px #127c20;
+    color: #333;
+    font-size: 16px;
+    overflow: hidden;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#sections article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imgmockup{
+    width: 100%;
+    height: auto;
+}
+
+#sections .principal{
+    text-align: center;
+}
+
+
 
 
 /*pie de pagina*/
@@ -96,7 +168,7 @@
     margin: 0px auto;
     text-align: center;
     margin-top:  40px;
-    background-color: #333 ;
+    background-color: #000000 ;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -122,7 +194,6 @@
     </header>
 
     <!--Fin Cabecera-->
-
     <!--Menu de Navegacion-->
     <nav id="navbar">
         <ul>
@@ -140,33 +211,95 @@
             </li>
          </ul>   
     </nav>
-
     <!--Fin de Menu-->
 
     <!--Secciones-->
-    <div id="sections">
-        <section id="frontend">
-            <span class="sticker">
-                <img class="stickerone" src="img/scotch.png" alt="Pegatina"/>
-                <img class="stickertwo" src="img/scotch.png" alt="Pegatina"/>
-            </span>
-            <h2 class="titulo">Noticias Front-end</h2>
+    <div id="sections" >
+        <section id="articles">
+            <h2 class="title">Selectores CSS</h2>
+            <p class="principal">Estos son lo que definen sobre que elementos se van a aplicar las reglas CSS</p>
             <article class="article">
-                <span class="icon">a</span>
-                <p>
-                    <a href="#">Titulo de la Entrada</a>
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                </p>
-                <span class="date">[16-09-2022. Sergio Chica]</span>
+               <h3 class="title">Selectores Básicos:</h3> 
+                    <h4 class="title">Selector de tipo</h4>
+                        <p>
+                            Este selecciona todos los elementos del desarrollo en HTML que coincidan con el selector, Ejemplo: 
+                            Tenemos la etiqueta H1 al seleccionarla en CSS quedaría de la siguiente manera: <br><br>
+                          <img class="imgejemplo" src="Imagenes/selector de tipo.PNG" alt="Ejemplo Selector de Tipo">  
+                        </p>
+                        <hr>
+                <h4 class="title">Selector de Clase: </h4>
+                    <p>
+                        Selecciona todos los elementos del desarrollo HTML que tengan el atributo “Class” especificado, ejemplo:
+                        Tenemos el siguiente fragmento de código : <br> <br>
+                        <img class="imgejemplo" src="Imagenes/Selector de clase.PNG" alt="Ejemplo de Selector de Clases">   
+                    </p>
+                    <hr>
+                <h4 class="title">Selector de ID</h4>
+                    <p>
+                        Selecciona un elemento basándose en el atributo “id”. Este tipo de selector selecciona solo un elemento de la página, 
+                        porque el valor del atributo id no se puede repetir en dos elementos diferentes de la misma página. Ejemplo:  <br><br>
+                        <img class="imgejemplo" src="Imagenes/Selector de ID.PNG" alt="Ejemplo de Selector de ID">
+                    </p>
+                    <hr>
+                <h4 class="title">Selector Universal</h4>
+                    <p>
+                        Este selecciona todos los elementos del código se escribe o representa a través de un *, Ejemplo:  <br><br>
+                        <img class="imgejemplo" src="Imagenes/Selector Universal.PNG" alt="Ejemplo de Selector Universal">
+                    </p>
+                    <hr>
+                <h4 class="title">Selector de Atributo</h4>
+                    <p>
+                        Los selectores de atributos se utilizan para seleccionar todos los elementos correspondientes a un atributo específico o valor de atributo definido. 
+                        Por ejemplo, a[href] seleccionará todos los enlaces, mientras que a[href*="google"] solo seleccionará todas las URL que contengan la palabra "google". 
+                        Este selector tiene una sintaxis un poco compleja la cual veremos líneas abajo: 
+                        <ul>
+                            <li>[attr] { propiedades de estilo }</li>
+                            <li>[attr=value] { propiedades de estilo }</li>
+                            <li>[attr~=value] { propiedades de estilo }</li>
+                            <li>[attr|=value] { propiedades de estilo }</li>
+                            <li>[attr^=value] { propiedades de estilo }</li>
+                            <li>[attr$=value] { propiedades de estilo }</li>
+                            <li>[attr*=value] { propiedades de estilo }</li>
+                        </ul>
+                        Ejemplo 
+                        <br><br>
+                        <img class="imgejemplo" src="Imagenes/Selector de atributo.PNG" alt="Ejemplo de Selector de Atributo">
+                    </p>
+                    <hr>
+                 <h4 class="title">Selector de Pseudoclase</h4>
+                    <p>
+                        Un selector de pseudo-clase permite modificar CSS a un grupo seleccionado de elementos o a los mismos que se encuentran en un estado específico. 
+                        Por ejemplo, el atributo :hover hará que solo se modifique el estilo de un elemento cuando el usuario pase sobre él. Ejemplo :  <br><br>
+                        <img class="imgejemplo" src="Imagenes/Selector pseudoclase.PNG" alt="Ejemplo de Selector Pseudoclase">
+                    </p>
+                    <hr>
             </article>
 
+            <section id="mockup">
+                <h2 class="title">Mockup</h2>
+                <img class="imgmockup"  src="Imagenes/Mockup.png" alt="Mockup">
+            </section>
+
+            <section id="acercade">
+                <h2 class="title">Acerca de</h2>
+                <p>Soy Sergio Estiven Chica Gallego, estudiante de Ingeniería de Sistemas actualmente me encuentro cursando el noveno semestre y trabajo en el área de IT 
+                    en soporte a usuarios, tengo conocimientos en soporte técnico, Microsoft Office, Azure, Active Directory, Power Bi y ademas en HTML, CSS, JavaScript 
+                    en un nivel básico. Estos son mis datos de contacto: 
+                </p>
+                <ul>
+                    <li>Skype: Sechg01</li>
+                    <li>Celular: 311 3203658</li>
+                    <li>e-mail: sechicag@unadvirtual.edu.co</li>
+                </ul>
+            </section>
+        </section>
+    </div>       
     <!--Fin de Secciones-->
 
       <!--pie de pagina-->
-      <footer id="footer">
-        <p>&copy; Desarrollado Por Sergio Estiven Chica Gallego</p>
-        <p>Ultima Fecha de Actualizacion 20 Febrero de 2023</p>
-    </footer>
+        <footer id="footer">
+            <p>&copy; Desarrollado Por Sergio Estiven Chica Gallego</p>
+            <p>Ultima Fecha de Actualizacion 27 Febrero de 2023</p>
+        </footer>
 </body>
 </html>
