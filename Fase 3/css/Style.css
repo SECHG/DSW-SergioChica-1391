@@ -39,6 +39,7 @@ body{
     margin: 0px auto;
     width: 140px;
     border-radius: 75%;
+    box-shadow: 4px 4px 4px #1aaa2d ;
 }
 
 #header h1{
