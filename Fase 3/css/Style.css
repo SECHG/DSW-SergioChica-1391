@@ -210,16 +210,6 @@ body{
     overflow: hidden;
 }
 
-#sections article{
-    margin: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#sections .date{
-    color: gray;
-    font-size: 14px;
-}
 
 #sections .stickerone{
     position: absolute;
@@ -235,6 +225,13 @@ body{
 
 }
 
+.audio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .nosotros {
     margin: 0 auto;
     text-align: center;
@@ -248,12 +245,7 @@ body{
     box-shadow: 2px 2px 2px 3px #27851b;
   }
   
-#history{
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-    
-}
+
 
 /*Fin De Secciones*/
 
