@@ -148,7 +148,7 @@ body{
 #content {
     font-family: 'Roboto Mono', monospace;
     width:  1250px;
-    min-height: 1800px;
+    min-height: 2500px;
     margin:  0px auto ;
 }
 
@@ -221,7 +221,7 @@ body{
     margin-right: 20px;
 }
 #sections .titulo{
-    font-family: "fajalla";
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 1px;
