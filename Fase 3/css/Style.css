@@ -12,7 +12,10 @@ font-family: 'Roboto Mono', monospace;
 
 body{
     background-image: url(../Imagenes/paven.png)
+    
 }
+
+
 
 /*Cabecera*/
 #header{
@@ -145,7 +148,7 @@ body{
 #content {
     font-family: 'Roboto Mono', monospace;
     width:  1250px;
-    min-height: 1100px;
+    min-height: 1800px;
     margin:  0px auto ;
 }
 
@@ -293,5 +296,6 @@ body{
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     box-shadow: 2px 2px 4px gray;
+    position: absolute;
     
 }
