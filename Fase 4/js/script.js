@@ -1,0 +1,20 @@
+function calificar(){
+    let total = 3;
+    let puntos = 0;
+
+    let myform = document.forms["formulario"];
+    let respuestascorrectas = ["a", "c", "b", "c", "a" ]; 
+
+    for (let i = 1; i <= total; i++ ) {
+        if (myform["r" + i].value == null || myform["r" + i].value == ''){
+        alert('Aun faltan preguntas por responder');
+        return false;             
+        } else {
+            if (myform["r" + i ].value === calificar [i - 1])
+            puntos++;
+        }
+    }
+    let resultado = document.getElementById('questionario');
+    resultado.innerHTML = "Obtuviste "+puntos+" puntos de "+ total+ " posibles";
+    return false; 
+}
