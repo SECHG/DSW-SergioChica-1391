@@ -1,5 +1,5 @@
 function calificar(){
-    let total = 3;
+    let total = 5;
     let puntos = 0;
 
     let myform = document.forms["formulario"];
@@ -10,7 +10,7 @@ function calificar(){
         alert('Aun faltan preguntas por responder');
         return false;             
         } else {
-            if (myform["r" + i ].value === calificar [i - 1])
+            if (myform["r" + i ].value === respuestascorrectas [i - 1])
             puntos++;
         }
     }
