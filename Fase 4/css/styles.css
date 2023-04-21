@@ -1,0 +1,38 @@
+*{
+
+    background-image: url(../Imagenes/paven.png);
+    
+}
+h1{
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    font-family: 'Vina Sans', cursive;
+}
+label {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button{
+    margin: 10px;
+    margin-top: 30px;
+    padding: auto;
+}
+#footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top:  40px;
+    background-color: #14ad35 ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(15, 15, 15);
+    font-family: 'Vina Sans', cursive;
+    font-size: 14px;
+    box-shadow: 2px 2px 4px rgb(5, 5, 5);
+    position: absolute;
+}
