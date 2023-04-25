@@ -1,20 +1,33 @@
-function calificar(){
-    let total = 5;
-    let puntos = 0;
+const respuestasCorrectas = {
+    pregunta1: 'c',
+    pregunta2: 'b',
+    pregunta3: 'a',
+    pregunta4: 'd',
+    pregunta5: 'c',
+  };
 
-    let myform = document.forms["formulario"];
-    let respuestascorrectas = ["a", "c", "b", "c", "a" ]; 
-
-    for (let i = 1; i <= total; i++ ) {
-        if (myform["r" + i].value == null || myform["r" + i].value == ''){
-        alert('Aun faltan preguntas por responder');
-        return false;             
-        } else {
-            if (myform["r" + i ].value === respuestascorrectas [i - 1])
-            puntos++;
-        }
-    }
-    let resultado = document.getElementById('questionario');
-    resultado.innerHTML = "Obtuviste "+puntos+" puntos de "+ total+ " posibles";
-    return false; 
-}
+  
+  const botonEnviar = document.getElementById('botonEnviar');
+    botonEnviar.addEventListener('click', () => {
+  let puntaje = 0;
+  
+ 
+  if (document.getElementById('respuesta1c').checked) {
+    puntaje++;
+  }
+  if (document.getElementById('respuesta2b').checked) {
+    puntaje++;
+  }
+  if (document.getElementById('respuesta3a').checked) {
+    puntaje++;
+  }
+  if (document.getElementById('respuesta4d').checked) {
+    puntaje++;
+  }
+  if (document.getElementById('respuesta5c').checked) {
+    puntaje++;
+  }
+  
+  // Muestra el puntaje al usuario
+  alert(`Obtuviste ${puntaje} de 5 puntos.`);
+});
