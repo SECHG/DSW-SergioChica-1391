@@ -243,7 +243,6 @@ body{
     overflow: hidden;
 }
 
-
 #sections .stickerone{
     position: absolute;
     margin-top: -38px;
@@ -265,6 +264,18 @@ body{
     padding: 20px;
 }
 
+.pregunta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+label{
+    padding: 10px; 
+}
 .nosotros {
     margin: 0 auto;
     text-align: center;
