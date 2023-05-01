@@ -15,8 +15,6 @@ body{
     
 }
 
-
-
 /*Cabecera*/
 #header{
     min-width: 1024px;
@@ -264,6 +262,7 @@ body{
     padding: 20px;
 }
 
+/*
 .pregunta{
     display: flex;
     flex-direction: column;
@@ -271,7 +270,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
-}
+}*/
 
 label{
     padding: 10px; 
@@ -290,8 +289,13 @@ label{
   }
   
 
-
 /*Fin De Secciones*/
+
+.clearfix{
+    float: none;
+    clear: both;
+    width: auto;
+}
 
 /*pie de pagina*/
 
