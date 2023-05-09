@@ -2,7 +2,7 @@
 <html lang="es">
    <head>
     <meta charset="utf-8"/>
-    <title>Equipo de trabajo - Fase 3</title>
+    <title>Audios</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css"  href="css/Style.css">
@@ -68,7 +68,7 @@
             <ul>
         </nav>
          <!--Cotenido Central-->
-         <div id="content">
+        <div id="content">
             <!--Inicio Barra Lateral-->
                 <aside id="aside">
                     <div class= "widget" id="login">
@@ -102,73 +102,81 @@
                         </ul>
                     </div>
                 </aside>
-               
-            <!--Fin Barra Lateral-->
-            
-            <!--Inicio sesiones-->
+                 <!--Inicio sesiones-->
             <div id="sections">
                 <section id="nosotros">
                     <span class="sticker">
                         <img class="stickerone" src="Imagenes/scotch.png" alt="Pegatina"/>
                         <img class="stickertwo" src="Imagenes/scotch.png" alt="Pegatina"/>
                     </span>
-                    <h2 class="titulo red">Sergio Chica</h2>
+                    <h2 class="titulo red">BOX MODEL</h2>
                     <div class="nosotros d-flex flex-column justify-content-center align-items-center">
-                        <img class="imagen-desarrollador" src="Imagenes/Sergio_Chica.jpg" alt="Foto de Sergio Chica">
-                        <h1>Sergio Chica</h1>
-                        <h2>Desarrollo Sitios Web y Especialista en soporte técnico</h2><br>
-                        <h2>Mail: sechicag@unadvirtual.edu.co</h2>
+                        <p>En CSS, el término "modelo de caja" se usa cuando se habla de diseño y diseño.
+                            El modelo de caja CSS es esencialmente una caja que envuelve cada elemento HTML. Consiste en: 
+                            márgenes, bordes, relleno y el contenido real. La siguiente imagen ilustra el modelo de caja:
+                            Al maquetar un documento, el motor de renderizado del navegador representa cada elemento como una caja rectangular, 
+                            conforme al estándar del modelo de caja básico de CSS. CSS determina el tamaño, la posición y las propiedades (color, fondo, tamaño del borde, etc.) de estas cajas.
+                            Cada caja está compuesta de cuatro partes (o áreas), definidas por sus respectivos límites: límite de contenido (content edge) , 
+                            límite de relleno (padding edge) , límite de borde (border edge) y límite de margen (margin edge).</p>
+                    </div>
+                </section>
+                <section id="nosotros">
+                    <span class="sticker">
+                        <img class="stickerone" src="Imagenes/scotch.png" alt="Pegatina"/>
+                        <img class="stickertwo" src="Imagenes/scotch.png" alt="Pegatina"/>
+                    </span>
+                    <h2 class="titulo red">Areas Box Model</h2>
+                    <div class="nosotros d-flex flex-column justify-content-center align-items-center">
+                        <br>
+                        <p>Inicias con la caja de contenido, que es la área en la que reside el contenido. Como aprendiste antes: este contenido puede 
+                            controlar el tamaño de su elemento principal, por lo que suele ser el área de tamaño más variable.
+                        </p>
+                        <br>
+                        <p>
+                            La caja de padding (relleno) rodea la caja de contenido y es el espacio creado por la propiedad de padding.
+                            Debido a que el padding está dentro de la caja, el fondo de la caja será visible en el espacio que crea. 
+                            Si nuestra caja tiene reglas de desbordamiento establecidas, como overflow: auto o overflow: scroll, las barras 
+                            de desplazamiento ocuparán este espacio también.
+                        </p>
+                        <br>
+                        <p>
+                            La caja de borde rodea la caja de padding y su espacio está ocupado por el valor del border. La caja de borde son los límites de su caja y el filo del borde 
+                            es el límite de lo que puedes ver visualmente. La propiedad de border se usa para enmarcar visualmente un elemento.
+                        </p>
+                        <br>
+                        <p>
+                            El área final, la caja de margen, es el espacio alrededor de tu caja, definida por la regla de margin. 
+                            Propiedades como el outline y box-shadow ocupan este espacio porque están pintadas por encima de los elementos, por lo que no afectan el tamaño de nuestra caja. 
+                            Puedes tener un outline-width de 200px en nuestra caja y todo lo que está dentro e incluido la caja de borde sería exactamente del mismo tamaño.
+                        </p><br>
+                        <p>Cada elemento HTML es una caja que tiene 4 lados y se compone de cuatro áreas:</p>
+                        <img src="imagenes/margen.png"width="700"height="450" alt="funcionamiento box model">
+                        <br>
+                        <h3>Internos:</h3>
+                        <br>
+                        <ul >
+                            <li>Content Box</li>
+                            <li>Padding Box</li>
+                            <li>Border Box</li>
+                        </ul>
+                        <br>
+                        <h3 class="subtitulos">Externos:</h3>
                         
+                        <ul >
+                            <li>Margin Box</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <p>Estas áreas se apilan para formar el modelo de caja o box model. Cada elemento HTML es una caja que podemos controlar 
+                        en el espacio exterior con la propiedad margin, después, podemos darle un borde y con la propiedad padding,
+                        también podemos proporcionar los espacios interiores entre el contenido y el borde dentro de la caja.</p>
+                </div>
                     </div>
                 </section>
-                <section id="nosotros">
-                    <span class="sticker">
-                        <img class="stickerone" src="Imagenes/scotch.png" alt="Pegatina"/>
-                        <img class="stickertwo" src="Imagenes/scotch.png" alt="Pegatina"/>
-                    </span>
-                    <h2 class="titulo red">Juan Rivera</h2>
-                    <div class="nosotros d-flex flex-column justify-content-center align-items-center">
-                        <img class="imagen-desarrollador" src="Imagenes/Juan_Rivera.jpg" alt="Foto de Juan Rivera">
-                        <h1>Juan Rivera</h1>
-                        <h2>Estudiante de Ingenieria de Sistemas</h2><br>
-                        <h2>Mail: jdrivera@unadvirtual.edu.co</h2>
-                    </div>
-                </section>
-                <section id="nosotros">
-                    <span class="sticker">
-                        <img class="stickerone" src="Imagenes/scotch.png" alt="Pegatina"/>
-                        <img class="stickertwo" src="Imagenes/scotch.png" alt="Pegatina"/>
-                    </span>
-                    <h2 class="titulo red">Diego Gaviria</h2>
-                    <div class="nosotros d-flex flex-column justify-content-center align-items-center">
-                        <img class="imagen-desarrollador" src="Imagenes/Diego_Gaviria.jpg" alt="Foto de Diego Gaviria">
-                        <h1>Diego Gaviria</h1>
-                        <h2>Trabajo como Ingeniero de Infraestructura en lider implementando 
-                            plataformas de contenerizacion en la nube utilizando Infraestructura como Codigo</h2><br>
-                        <h2>Mail: degaviria@unadvirtual.edu.co  </h2>
-                    </div>
-                </section>
-                <section id="nosotros">
-                    <span class="sticker">
-                        <img class="stickerone" src="Imagenes/scotch.png" alt="Pegatina"/>
-                        <img class="stickertwo" src="Imagenes/scotch.png" alt="Pegatina"/>
-                    </span>
-                    <h2 class="titulo red">Luis Eduardo Escobar Diaz</h2>
-                    <div class="nosotros d-flex flex-column justify-content-center align-items-center">
-                        <img class="imagen-desarrollador" src="Imagenes/Luis_Escobar.png" alt="Foto de Diego Gaviria">
-                        <h1>Luis Eduardo Escobar Diaz</h1>
-                        <h2>                          
-                            Estudiante de Ingeniería de Software <br>
-                            Email: leescobar@unadvirtual.edu.com
-                           
-                        </h2>
-                    
-                    </div>
-                </section>
+                
             </div>
         </div>     
-        <div class="clearfix"></div>
-
+        
         <footer id="footer">
             <p>&copy; Desarrollado Por Grupo_301122_5 Mayo 2023</p>
         </footer>
